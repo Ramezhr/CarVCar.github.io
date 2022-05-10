@@ -1,0 +1,79 @@
+/* button */
+.moods{
+  z-index: 1;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+.moods li{
+  text-align: center;
+  list-style: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  text-align: center;
+}
+.moods.active li{
+  transform: translateY(-30px);
+}
+.moods li span{
+  display: block;
+  height: 30px;
+  line-height: 2;
+}
+
+/* main */
+body.L{
+    background-color: #edf6f9;
+  }
+.header.L{
+  background-color: #2ec4b6;
+}
+  .pop h2.L,
+  .container h1.L,
+  .view .container .info.L,
+  .container .pop button a.L,
+  .footer.L,
+  .footer a.L{
+    color: black;
+}
+.footer.L{
+    background-color: rgb(230, 223, 253);
+}
+
+/* contact us*/
+input[type=text].L,
+textarea.L,
+input[type=submit].L{
+    background-color: white;
+}
+
+/* about us */
+.found .container h2.L,
+.found .container p.L,
+.mission .mission-text h2.L,
+.mission .mission-text p.L,
+.culture .container .teamwork h2.L,
+.culture .container .teamwork p.L{
+    color: black !important;
+}
+.sponsors.L{
+    background-color: #00a8e8;
+}
+
+/* compare */
+
+.intro .container p.L,
+.top .container p.L,
+th.L,td.L{
+    color: black;
+}
+.top.L,
+tr:nth-child(even).L{
+    background-color: skyblue;
+}
+
+
+
+

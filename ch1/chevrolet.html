@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<head>
+    <title>Chevrolet</title> 
+    <script src="https://kit.fontawesome.com/04ca326e53.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-image: url("images/High-definition-image-of-Chevrolet-emblem\,-wallpaper-of-logo-.jpg");
+            color: white;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .bb{
+            width: 120px;
+            height: 120px;
+        }
+        video{
+            width: 60%;
+        }
+        ul {
+            list-style-type: none;
+        } 
+        .b{ 
+            position: relative;
+            width: 23px;
+            height: 23px;
+            display:inline-block; 
+            top: 6px;
+        }
+        table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+  }
+  th{ background-color: white; color: black;}
+  td{ color: white;}
+        footer { 
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 0.7rem;
+    text-decoration: solid;
+    text-align: center;
+    image-orientation: flip;
+}
+h2{
+    position: relative;
+    bottom:50px;
+}
+header { 
+ display: flex; 
+ justify-content: space-between; 
+ align-items: center; 
+ padding: 30px 10%; 
+} 
+ 
+.navigation-list { 
+ list-style: none; 
+} 
+.logo { 
+  font-size: 40px; color: white;
+ }  
+ 
+.link { 
+ color: white; 
+ text-transform: uppercase; 
+} 
+ 
+.link:hover { 
+ color: rgb(152, 36, 36); 
+ border-bottom: 1px solid rgb(190, 46, 46); 
+} 
+ 
+.active { 
+ color: rgb(190, 46, 46); 
+} 
+ 
+.list-item, .link, .button-news { 
+ font-family: "Montserrat", sans-serif; 
+ font-weight: 600; 
+ font-size: 16px; 
+ text-decoration: none; 
+} 
+ 
+.navigation-list .list-item { 
+ display: inline-block; 
+ padding: 0px 20px; 
+} 
+ 
+.navigation-list .list-item .button-news { 
+ transition: all 0.3s ease 0s; 
+} 
+ 
+.navigation-list .list-item .button-news:hover { 
+ color: black; 
+} 
+ 
+.button-news { 
+ padding: 9px 25px; 
+ background-color: rgb(190, 46, 46); 
+ border: none; 
+ border-radius: 50px; 
+ cursor: pointer; 
+ color: black; 
+} 
+ 
+.button-news:hover { 
+ background-color: rgb(152, 36, 36); 
+}
+strong{
+    font-size: 40px;
+    color: white;
+}
+.container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #24262b;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 6rem;;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+    /* Start Footer */
+    .footer {
+      padding-top: calc(var(--section-padding) / 2);
+      padding-bottom: calc(var(--section-padding) / 2);
+      background-image: url("5g.jpg");
+      background-size: cover;
+      position: relative;
+      color: white;
+      text-align: center;
+    }
+    .footer::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(0 0 0 / 70%);
+    }
+    .footer .container {
+      position: relative;
+    }
+    .footer img {
+      margin-bottom: 20px;
+    }
+    .footer p:not(.copyright) {
+      text-transform: uppercase;
+      padding: 20px;
+      border-bottom: 1px solid white;
+      font-size: 22px;
+      width: fit-content;
+      margin: 20px auto;
+    }
+    .footer .social-icons i {
+      padding: 10px 15px;
+    }
+    .footer .copyright {
+      margin-top: 60px;
+    }
+    .footer .copyright span {
+      font-weight: bold;
+      color: var(--main-color);
+    }
+    </style>
+</head>
+    <body>
+        <header>    
+             <div class="logo-image"><img src="../logo.jpg" alt="Logo Image" width="100px" height="80px"></div>
+
+            <div class="logo"<strong>Car V Car</strong></div>     <nav> 
+
+             <nav> 
+                <ul class="navigation-list"> 
+                    <li class="list-item"><a class="link active" href="../car/index.html">Home</a></li> 
+                    <li class="list-item"><a class="link" href="../PROJECT IT FINAL/html/Regestration.html">Login</a></li> 
+                    <li class="list-item"><a class="link" href="../about&video/FIRST PROJECT/about usss.html">About Us</a></li> 
+                    <li class="list-item"><a class="link" href="../progect/roro.html">Contact Us</a></li> 
+                    <li class="list-item"><a class="link" href="../about&video/FIRST PROJECT/videoooos.html">Videos</a></li> 
+                    <a class="button-news" href="../news&pugeot/new 1.html">News</a>  
+                  </ul> 
+             </nav> 
+
+         </header>
+        <center><img class="bb" src="images/chevrolet.png"></center>
+        <center><h2>Chevrolet</h2></center>
+    <p>Chevrolet colloquially referred to as Chevy and formally the Chevrolet Division of General Motors Company, is an American automobile division of the American manufacturer General Motors (GM). Louis Chevrolet and ousted General Motors founder William C. Durant started the company on November 3, 1911[2] as the Chevrolet Motor Car Company.</p>
+    <center><video controls>
+        <source src="vedios/VID_20220427114605.mp4">
+    </video></center>
+    <h3>Malibu 2022 </h3>
+    <button onclick="document.getElementById('imge').src='images/slide1.jpg'">Previous Photo</button>
+    <img id="imge" src="images/slide2.jpg" style=" width: 70%;">
+    <button onclick="document.getElementById('imge').src='images/slide2.jpg'">Next Photo</button>
+    <h3>Pros :</h3>
+    <ul>
+        <li><img class="b" src="images/391175.png">  Spacious interior with lots of front headroom</li><br>
+        <li><img class="b" src="images/391175.png">  Easy-to-use touchscreen interface</li>
+    </ul>
+    <h3>Cons :</h3>
+    <ul>
+        <li><img class="b" src="images/1828527.png">  Lackluster acceleration from the base 1.5-liter engine</li><br>
+        <li><img class="b" src="images/1828527.png">  Limited outward visibility</li><br>
+        <li><img class="b" src="images/1828527.png">  Advanced driver safety aids don't come standard</li>
+     
+    </ul>
+    <p>Chevrolet eliminates the base L trim level from the 2022 Malibu lineup, leaving LS, RS, LT, and Premier trims. All but the Premier have a turbocharged 1.5-liter four-cylinder engine (160 horsepower, 184 lb-ft of torque) driving the front wheels through a continuously variable automatic transmission. A larger 2.0-liter four-cylinder engine is exclusive to the Malibu Premier, providing 250 hp and 260 lb-ft. It uses a nine-speed automatic transmission</p>
+<table>
+    <tr>
+        <th>Comparison</th>
+        <th>LS</th>
+        <th>RS</th>
+        <th>LT</th>
+    </tr>
+    <tr>
+        <td>Wheels</td>
+        <td>16-inch alloy wheels</td>
+        <td>18-inch wheels</td>
+        <td>17-inch wheels</td>
+    </tr>
+    <tr>
+        <td>Lamps</td>
+        <td>Automatic headlights</td>
+        <td>Rear spoiler</td>
+        <td>LED running lights and taillights</td>
+    </tr>
+    <tr>
+        <td>Controls</td>
+        <td>Cruise control</td>
+        <td>Dual exhaust outlets</td>
+        <td>Heated front seats</td>
+    </tr>
+    <tr>
+        <td>Prices</td>
+        <td>$24,395</td>
+        <td>$25,395</td>
+        <td>$27,795</td>
+    </tr>
+</table>
+<hr>
+<center><video controls>
+    <source src="vedios/All-New 2021 Chevy Tahoe and Suburban _ Chevrolet(360P).mp4">
+</video></center>
+<h3>Tahoe 2021 </h3>
+<button onclick="document.getElementById('imgs').src='images/2021_chevrolet_tahoe_4dr-suv_rst_fq_oem_2_1280x855.jpg'">Previous Photo</button>
+    <img id="imgs" src="images/2021_chevrolet_tahoe_4dr-suv_z71_fq_oem_1_1280x855.jpg" style=" width: 70%;">
+    <button onclick="document.getElementById('imgs').src='images/2021_chevrolet_tahoe_4dr-suv_z71_fq_oem_1_1280x855.jpg'">Next Photo</button>
+    <h3>Pros :</h3>
+    <ul>
+        <li><img class="b" src="images/391175.png">  Roomy interior for passengers and cargo</li><br>
+        <li><img class="b" src="images/391175.png">  Smooth ride</li><br>
+        <li><img class="b" src="images/391175.png">  Easy-to-use touchscreen</li><br>
+        <li><img class="b" src="images/391175.png">  Newly available diesel engine</li>
+    </ul>
+    <h3>Cons :</h3>
+    <ul>
+        <li><img class="b" src="images/1828527.png">  Uncomfortable front and second-row seats</li><br>
+        <li><img class="b" src="images/1828527.png">  Interior control layout isn't particularly intuitive</li><br>
+        <li><img class="b" src="images/1828527.png">  Some interior materials seem downmarket for the price</li><br>
+        <li><img class="b" src="images/1828527.png">  Low handling limits</li>
+    </ul>
+    <p>The 2021 Tahoe is offered in six trim levels: the LS, LT, RST, Z71, Premier and High Country. The standard engine on the Tahoe is a 5.3-liter V8 (355 horsepower, 383 lb-ft) mated to a 10-speed automatic transmission. Four-wheel drive is available on all trim levels (standard on the Z71).</p>
+    <table>
+        <tr>
+            <th>Comparison</th>
+            <th>RST</th>
+            <th>Z71</th>
+            <th>PREMIER</th>
+        </tr>
+        <tr>
+            <td>Wheels</td>
+            <td>22-inch alloy wheels</td>
+            <td>Unique front fascia to improve the Tahoe's approach angle</td>
+            <td>Magnetically controlled shock absorbers (better ride and handling capabilities)</td>
+        </tr>
+        <tr>
+            <td>Seats</td>
+            <td>Driver's seat memory settings and heated front seats</td>
+            <td>Heated and ventilated front seats</td>
+            <td>Second-row bucket seats (drops capacity to seven passengers)</td>
+        </tr>
+        <tr>
+            <td>Prices</td>
+            <td>$59,995</td>
+            <td>$61,995</td>
+            <td>$64,795</td>
+        </tr>
+    </table>
+     <hr>
+    <center>
+        <video controls>
+            <source src="vedios/2020 Chevrolet Colorado ZR2 Review(360P).mp4">
+        </video> 
+    </center>
+    <h3>Colorado 2020 </h3>
+    <button onclick="document.getElementById('imgl').src='images/2020_chevrolet_colorado_crew-cab-pickup_z71_fq_oem_1_1280x855.jpg'">Previous Photo</button>
+    <img id="imgl" src="images/2020_chevrolet_colorado_crew-cab-pickup_z71_fq_oem_2_1280x855.jpg" style=" width: 70%;">
+    <button onclick="document.getElementById('imgl').src='images/2020_chevrolet_colorado_crew-cab-pickup_z71_fq_oem_2_1280x855.jpg'">Next Photo</button>
+     <h3>Pros :</h3>
+     <ul>
+        <li><img class="b" src="images/391175.png">  Gasoline V6 and diesel four-cylinder engines tow more than rivals</li><br>
+        <li><img class="b" src="images/391175.png">  Maneuverable size, along with well-mannered steering and handling</li><br>
+        <li><img class="b" src="images/391175.png">  Comfortable ride over most surfaces</li><br>
+        <li><img class="b" src="images/391175.png">  Simple, easy-to-use cabin controls</li>
+    </ul>
+    <h3>Cons :</h3>
+    <ul>
+        <li><img class="b" src="images/1828527.png">  Front seats can feel confining for larger people </li><br>
+        <li><img class="b" src="images/1828527.png">  Rivals offer more in-cab storage with rear seats folded</li><br>
+        <li><img class="b" src="images/1828527.png">  Low-hanging front airdam limits off-road potential</li>
+    </ul>
+    <p>The 2020 Chevrolet Colorado is a midsize pickup offered in extended-cab and crew-cab body styles. There are two bed lengths and five trim levels: Base, Work Truck (WT), LT, Z71 and ZR2.</p>
+    <table>
+        <tr>
+            <th>Comparison</th>
+            <th>BASE</th>
+            <th>WT</th>
+            <th>ZR2</th>
+        </tr>
+        <tr>
+            <td>Wheels</td>
+            <td>16-inch steel wheels</td>
+            <td>Unique front fascia to improve the Tahoe's approach angle</td>
+            <td>Magnetically controlled shock absorbers (better ride and handling capabilities)</td>
+        </tr>
+        <tr>
+            <td>Engine</td>
+            <td>2.5-liter inline four-cylinder engine</td>
+            <td>2.8-liter turbocharged four-cylinder diesel engine</td>
+            <td>diesel-engine with V6</td>
+        </tr>
+        <tr>
+            <td>Horse Power</td>
+            <td>200 horsepower and 191 lb-ft of torque</td>
+            <td>308 hp and 275 lb-ft</td>
+            <td>181 hp and 369 lb-ft paired to a six-speed automatic</td>
+        </tr>
+        <tr>
+            <td>Prices</td>
+            <td>$21,300</td>
+            <td>$25,895</td>
+            <td>$44,095</td>
+        </tr>
+    </table>
+    
+	 <!-- Start Footer -->
+	 <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="file:///C:/Users/lenovo/Desktop/project%20folders/about&video/FIRST%20PROJECT/about%20usss.html">about us</a></li>
+                        <li><a href="file:///C:/Users/lenovo/Desktop/project%20folders/about&video/FIRST%20PROJECT/about%20usss.html">our services</a></li>
+                        <li><a href="https://policies.google.com/privacy?hl=en-US">privacy policy</a></li>
+                        <li><a href=" https://www.shipito.com/en/blog/shipito-affiliate-program-dec-21?gclid=CjwKCAjw9-KTBhBcEiwAr19ig5-9Eu40UGoVlCKcLnuLLPOzNd_w1Qa6sQRYaTc7ROAJ6W74vcwTHRoC-eYQAvD_BwE">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href=" https://faqabout.me/?gclid=CjwKCAjw9-KTBhBcEiwAr19igwWfl906G6WpNNRLYCkZP0tuwq3OSKZtFP1HYJiipuTFu8hz8IXkjBoCdW0QAvD_BwE">FAQ</a></li>
+                        <li><a href=" https://www.hapag-lloyd.com/en/online-business/quotation/quick-quotes.html?gclid=CjwKCAjw9-KTBhBcEiwAr19ig4tn0LpZbTh3UXBYY7YExgfnGwoSEMZA48dj81PCg_KK7kVvHbaKMRoCpwIQAvD_BwE">shipping</a></li>
+                        <li><a href=" https://www.investopedia.com/articles/basics/10/guide-to-calculating-roi.asp">returns</a></li>
+                        <li><a href="file:///C:/Users/lenovo/Desktop/project%20folders/progect/roro.html">order status</a></li>
+                        <li><a href=" https://www.copyright.gov/">copy rights</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>buy online</h4>
+                    <ul>
+                        <li><a href=" https://eg.hatla2ee.com/ar/car/search?make=71&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">mg</a></li>
+                        <li><a href="https://eg.hatla2ee.com/ar/car/search?make=1&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">chevrolet</a></li>
+                        <li><a href="https://eg.hatla2ee.com/ar/car/search?make=4&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">fiat</a></li>
+                        <li><a href="https://eg.hatla2ee.com/ar/car/search?make=10&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">bejout</a></li>
+                        <li><a href="https://eg.hatla2ee.com/ar/car/search?make=12&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">hyundai</a></li>
+                        <li><a href="https://eg.hatla2ee.com/ar/car/search?make=3&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">kia</a></li>
+                        <li><a href="https://eg.hatla2ee.com/ar/car/search?make=41&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">honda</a></li>
+                        <li><a href="https://eg.hatla2ee.com/ar/car/search?make=21&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">nissan</a></li>
+                        <li><a href="https://eg.hatla2ee.com/ar/car/search?make=36&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">toyota</a></li>
+                        <li><a href="https://eg.hatla2ee.com/ar/car/search?make=6&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">byd</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                  <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <center><h3>@2022 copy right</h3></center>
+   </footer>
+    <!-- End Footer -->
+</body>
+</html>

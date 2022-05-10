@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiat</title>
+    <script src="https://kit.fontawesome.com/04ca326e53.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0IfaR3mYddNE_ovFI0iufkYhXX_X9soWj8g&usqp=CAU);
+        background-repeat: repeat;
+        
+        color: white;
+    }
+    th{
+        border:8px solid blue;
+        color: white;
+        background-color: blue;
+    }
+    td{
+        border:1px solid white;
+        border-bottom: 1px solid white;
+        padding: 8px;
+        background-color: black;
+
+    }
+
+    table{
+        border-collapse: collapse;
+    }
+
+
+    header { 
+ display: flex; 
+ justify-content: space-between; 
+ align-items: center; 
+ padding: 30px 10%; 
+} 
+ 
+.navigation-list { 
+ list-style: none; 
+} 
+ 
+.logo { 
+ font-size: 40px;color: white;
+} 
+ 
+.link { 
+ color: white; 
+ text-transform: uppercase; 
+} 
+ 
+.link:hover { 
+ color: rgb(152, 36, 36); 
+ border-bottom: 1px solid rgb(190, 46, 46); 
+} 
+ 
+.active { 
+ color: rgb(190, 46, 46); 
+} 
+ 
+.list-item, .link, .button-news { 
+ font-family: "Montserrat", sans-serif; 
+ font-weight: 600; 
+ font-size: 16px; 
+ text-decoration: none; 
+} 
+ 
+.navigation-list .list-item { 
+ display: inline-block; 
+ padding: 0px 20px; 
+} 
+ 
+.navigation-list .list-item .button-news { 
+ transition: all 0.3s ease 0s; 
+} 
+ 
+.navigation-list .list-item .button-news:hover { 
+ color: black; 
+} 
+ 
+.button-news { 
+ padding: 9px 25px; 
+ background-color: rgb(190, 46, 46); 
+ border: none; 
+ border-radius: 50px; 
+ cursor: pointer; 
+ color: black; 
+} 
+ 
+.button-news:hover { 
+ background-color: rgb(152, 36, 36); 
+}
+
+.container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #24262b;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 6rem;;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+    /* Start Footer */
+    .footer {
+      padding-top: calc(var(--section-padding) / 2);
+      padding-bottom: calc(var(--section-padding) / 2);
+      background-image: url("5g.jpg");
+      background-size: cover;
+      position: relative;
+      color: white;
+      text-align: center;
+    }
+    .footer::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(0 0 0 / 70%);
+    }
+    .footer .container {
+      position: relative;
+    }
+    .footer img {
+      margin-bottom: 20px;
+    }
+    .footer p:not(.copyright) {
+      text-transform: uppercase;
+      padding: 20px;
+      border-bottom: 1px solid white;
+      font-size: 22px;
+      width: fit-content;
+      margin: 20px auto;
+    }
+    .footer .social-icons i {
+      padding: 10px 15px;
+    }
+    .footer .copyright {
+      margin-top: 60px;
+    }
+    .footer .copyright span {
+      font-weight: bold;
+      color: var(--main-color);
+    }
+    .logo{
+      font-size: 40PX;
+      color: white;
+    }
+</style>
+<body>
+
+  <header> 
+    <div class="logo-image"><img src="../logo.jpg" alt="Logo Image" width="100px" height="80px"></div>
+
+    <div class="logo"<strong>Car V Car</strong></div>     <nav> 
+
+     <nav> 
+        <ul class="navigation-list"> 
+          <li class="list-item"><a class="link active" href="../car/index.html">Home</a></li> 
+                  <li class="list-item"><a class="link" href="../PROJECT IT FINAL/html/Regestration.html">Login</a></li> 
+                  <li class="list-item"><a class="link" href="../about&video/FIRST PROJECT/about usss.html">About Us</a></li> 
+                  <li class="list-item"><a class="link" href="../progect/roro.html">Contact Us</a></li> 
+                  <li class="list-item"><a class="link" href="../about&video/FIRST PROJECT/videoooos.html">Videos</a></li> 
+                  <a class="button-news" href="../news&pugeot/new 1.html">News</a>  
+          </ul> 
+     </nav> 
+
+ </header>
+    
+<center> <img src="https://brandslogos.com/wp-content/uploads/thumbs/fiat-logo-vector.svg" height="100" width="150"></center>
+<p>Fiat Automobiles S.p.A. is an Italian automobile manufacturer, formerly part of Fiat Chrysler Automobiles, and since 2021 a subsidiary of Stellantis through Italian factory FCA Italy.</p>
+<center><iframe width="700" height="345" src="https://www.youtube.com/embed/PcAGVZIR4xo"></iframe></center>
+<h1><font size="20px" color="" face = "Comic sans MS">Fiat tipo</font></h1>
+
+<a target="page-1" href="https://www.youtube.com/embed/tG6KSyiOh_8"><img width="750" height="410" src="https://ellaithy.com.eg/app/uploads/2020/07/1616321971_375_143358_tipomodelpagegelatowhitecar_desktop680x430.png"></a>
+<iframe name="page-1" height="700px" width="500" align="right"></iframe>
+
+<h2><font size="20px" color="blue" face = "Comic sans MS">Fiat 500x-sport</font></h2>
+<!-- https://en.wikipedia.org/wiki/Fiat -->
+<a href="https://www.youtube.com/embed/enTSVc05_ws" target="page-1"><img src="https://www.fiat.com/content/dam/fiat/com/models/500x-sport/figurini/500X-sport-model-page-bicolor-italia-blue-car-desktop-680x430.png"></a>
+<table style="width:70%" align="right">
+    <tr>
+      <th>fiat types</th>
+      <th>fiat tipo</th>
+      <th>fiat doblo</th>
+      <th>fiat 500</th>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td>198,000 EGP</td>
+      <td>234,000 EGP</td>
+      <td>254,000 EGP</td>
+    </tr>
+    <tr>
+      <td>Engine CC</td>
+      <td>1400</td>
+      <td>1400</td>
+      <td>1400</td>
+    </tr>
+      <tr>
+        <td>Engine HP</td>
+        <td>110</td>
+        <td>110</td>
+        <td>120</td>
+      </tr>
+      <tr>
+        <td>Max Torque</td>
+        <td>144</td>
+        <td>144</td>
+        <td>164</td>
+      </tr>
+      <tr>
+        <td>Cylinders</td>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Valves</td>
+        <td>15</td>
+        <td>15</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>Transmission</td>
+        <td>Manual</td>
+        <td>Automatic</td>
+        <td>Manual</td>
+      </tr>
+        </form>
+  </table>
+<h3><font size="9">Pros</font></h3>
+<p><ul type="none">
+    <li><img src="https://cdn.pixabay.com/photo/2017/04/08/18/17/correct-2214020_1280.png" width="15" height="15">A Big personality for a very modest price</li>
+    <li><img src="https://cdn.pixabay.com/photo/2017/04/08/18/17/correct-2214020_1280.png" width="15" height="15">A Cozy ride quality</li>
+    <li><img src="https://cdn.pixabay.com/photo/2017/04/08/18/17/correct-2214020_1280.png" width="15" height="15">Fits easily into tight spaces</li>
+    <li><img src="https://cdn.pixabay.com/photo/2017/04/08/18/17/correct-2214020_1280.png" width="15" height="15">A Reto design for the interior</li>
+    </ul>
+<h4><font size="9">Cons</font></h4>
+<p><ul type="none">
+    <li><img width="15" height="15" src="https://esquilo.io/png/thumb/vjF6ymuLdtTaynl-Wrong-Sign-PNG-Image.png">Slow to accelerate</li>
+    <li><img width="15" height="15" src="https://esquilo.io/png/thumb/vjF6ymuLdtTaynl-Wrong-Sign-PNG-Image.png">An Underwhelming fuel economy</li>
+    <li><img width="15" height="15" src="https://esquilo.io/png/thumb/vjF6ymuLdtTaynl-Wrong-Sign-PNG-Image.png">Th abarthnmodel is lackluster</li>
+    <li><img width="15" height="15" src="https://esquilo.io/png/thumb/vjF6ymuLdtTaynl-Wrong-Sign-PNG-Image.png">Diminished visibility</li>
+</ul>
+</p>
+<button onclick="document.getElementById('imge').src='1.jpg'">Previous Photo</button>
+   <img id="imge" src="1.jpg" style=" width: 70%;">
+   <button onclick="document.getElementById('imge').src='2.jpg'">Next Photo</button>
+
+
+	 <!-- Start Footer -->
+	 <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="file:///C:/Users/lenovo/Desktop/project%20folders/about&video/FIRST%20PROJECT/about%20usss.html">about us</a></li>
+                    <li><a href="file:///C:/Users/lenovo/Desktop/project%20folders/about&video/FIRST%20PROJECT/about%20usss.html">our services</a></li>
+                    <li><a href="https://policies.google.com/privacy?hl=en-US">privacy policy</a></li>
+                    <li><a href=" https://www.shipito.com/en/blog/shipito-affiliate-program-dec-21?gclid=CjwKCAjw9-KTBhBcEiwAr19ig5-9Eu40UGoVlCKcLnuLLPOzNd_w1Qa6sQRYaTc7ROAJ6W74vcwTHRoC-eYQAvD_BwE">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href=" https://faqabout.me/?gclid=CjwKCAjw9-KTBhBcEiwAr19igwWfl906G6WpNNRLYCkZP0tuwq3OSKZtFP1HYJiipuTFu8hz8IXkjBoCdW0QAvD_BwE">FAQ</a></li>
+                    <li><a href=" https://www.hapag-lloyd.com/en/online-business/quotation/quick-quotes.html?gclid=CjwKCAjw9-KTBhBcEiwAr19ig4tn0LpZbTh3UXBYY7YExgfnGwoSEMZA48dj81PCg_KK7kVvHbaKMRoCpwIQAvD_BwE">shipping</a></li>
+                    <li><a href=" https://www.investopedia.com/articles/basics/10/guide-to-calculating-roi.asp">returns</a></li>
+                    <li><a href="file:///C:/Users/lenovo/Desktop/project%20folders/progect/roro.html">order status</a></li>
+                    <li><a href=" https://www.copyright.gov/">copy rights</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>buy online</h4>
+                <ul>
+                    <li><a href=" https://eg.hatla2ee.com/ar/car/search?make=71&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">mg</a></li>
+                    <li><a href="https://eg.hatla2ee.com/ar/car/search?make=1&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">chevrolet</a></li>
+                    <li><a href="https://eg.hatla2ee.com/ar/car/search?make=4&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">fiat</a></li>
+                    <li><a href="https://eg.hatla2ee.com/ar/car/search?make=10&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">bejout</a></li>
+                    <li><a href="https://eg.hatla2ee.com/ar/car/search?make=12&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">hyundai</a></li>
+                    <li><a href="https://eg.hatla2ee.com/ar/car/search?make=3&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">kia</a></li>
+                    <li><a href="https://eg.hatla2ee.com/ar/car/search?make=41&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">honda</a></li>
+                    <li><a href="https://eg.hatla2ee.com/ar/car/search?make=21&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">nissan</a></li>
+                    <li><a href=" https://eg.hatla2ee.com/ar/car/search?make=36&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">toyota</a></li>
+                    <li><a href="https://eg.hatla2ee.com/ar/car/search?make=6&city=0&dateMin=0&priceMin=&model=&body=&dateMax=0&priceMax=&accountMin=&installmentMin=&accountMax=&installmentMax=">byd</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                  <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                  <a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center><h3>@2022 copy right</h3></center>
+</footer>
+<!-- End Footer -->
+
+</body>
+</html>
